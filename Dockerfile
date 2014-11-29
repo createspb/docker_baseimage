@@ -9,6 +9,11 @@ RUN apt-get install -qy unzip software-properties-common sudo python-pip git pyt
 
 ENV LANG "C.UTF-8"
 ENV LC_ALL "C.UTF-8"
+
+# LC_ALL FIX
+RUN bash -c 'echo "export LC_ALL=C.UTF-8" >> /.bashrc'
+
+
 ENV LANGUAGE "C.UTF-8"
 ENV PYTHONENCODING "utf8"
 
