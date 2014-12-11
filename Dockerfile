@@ -5,7 +5,7 @@ ENV HOME /root
 CMD ["/sbin/my_init"]
 
 RUN apt-get update -qy && apt-get upgrade -y
-RUN apt-get install -qy unzip software-properties-common sudo python-pip git python-dev libxml2-dev libxslt-dev lib32z1-dev libpq-dev libjpeg8 libjpeg8-dev gettext telnet emacs24-nox
+RUN apt-get install -qy unzip wget software-properties-common sudo python-pip git python-dev libxml2-dev libxslt-dev lib32z1-dev libpq-dev libjpeg8 libjpeg8-dev gettext telnet emacs24-nox
 
 ENV LANG C.UTF-8
 ENV LC_ALL C.UTF-8
